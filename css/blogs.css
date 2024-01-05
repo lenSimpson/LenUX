@@ -1,0 +1,209 @@
+/* Edit these colours to change the design of your blogs */
+
+:root {
+    --main-text-colour: #1C1D21;
+    --accent-colour: #016FB9;
+    --light-text-colour: white;
+    --footer-background-color: #00253D;
+    --footer-text-color: #EBF7FF;
+}
+
+/* stop editing here... */
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.35;
+    color: var(--main-text-colour);
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--accent-colour);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--main-text-colour);
+    text-decoration-color: var(--accent-colour);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-colour);
+    text-decoration-color: var(--accent-colour);
+}
+
+header {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-colour);
+
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        min-height: 75vh;
+    }
+}
+
+header h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--light-text-colour);
+
+}
+
+header h1 span {
+    display: block;
+    font-size: 4rem;
+    text-transform: none;
+
+}
+
+nav {
+    border-bottom: 10px solid var(--accent-colour);
+}
+
+@media screen and (min-width: 800px) {
+    nav {
+        border-bottom: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media screen and (min-width: 800px) {
+    nav ul {
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+
+nav li {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--accent-colour);
+}
+
+@media screen and (min-width: 800px) {
+    nav li {
+        flex: 33%;
+    }
+}
+
+nav a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+    nav li a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        color: var(--text-colour);
+    }
+
+    nav li a:hover {
+        color: var(--accent-colour);
+    }
+}
+
+main {
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.blog {
+    padding: 3rem 0;
+}
+
+.blog h2 {
+    padding: 0 0 0.75rem 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.blog h3 {
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.blog img {
+    margin: 0 0 1rem 0;
+}
+
+.blog h4 {
+    text-transform: uppercase;
+    padding: 2rem 0 0.5rem 0;
+}
+
+.blog p {
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+.blog ul.references {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid #ddd;
+}
+
+.blog li {
+    border-bottom: 1px solid #ddd;
+    padding: 0.65rem 0;
+}
+
+footer {
+    background: var(--footer-background-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 2rem 1rem 5rem 1rem;
+}
+
+footer a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--footer-text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--footer-text-color);
+}
